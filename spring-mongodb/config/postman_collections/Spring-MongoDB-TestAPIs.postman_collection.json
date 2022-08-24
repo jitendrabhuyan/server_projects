@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "f696234f-0246-4b29-92bd-a310dd4c9c55",
+		"name": "Spring-MongoDB-TestAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13362307"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/addBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5678,\r\n    \"bookName\":\"Bhagwad Gita\",\r\n    \"authorName\":\"Krishna\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/findAllBooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"findAllBooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findBooksById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/findAllBooks/5679",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"findAllBooks",
+						"5679"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBookById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/delete/5679",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete",
+						"5679"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
